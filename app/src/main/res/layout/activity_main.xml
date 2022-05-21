@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/mainbar"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_android"
+            android:id="@+id/image_view"
+            android:layout_height="100dp">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mainbar"
+        app:tabTextColor="#FFFFFF"
+        android:id="@+id/tablayout"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tablayout"
+        android:id="@+id/viewpager"
+        android:layout_height="fill_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
+
+
+
+
+
